@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <title>...</title>
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <style>
+	    	
+body {
+	margin: 100px  auto;
+    width: 800px;
+    background-color: #ccc;
+}
+blockquote {
+    color: #383838;
+    font-family: Georgia,serif;
+    font-size: 50px;
+    font-style: italic;
+    line-height: 1.45;
+    margin: 0.25em 0;
+    padding: 0.25em 50px;
+    position: relative;
+    background-color: #eee;
+    /*width: 500px;*/
+}
+blockquote::before {
+    color: #7a7a7a;
+    content: "\201C";
+    display: block;
+    font-size: 100px;
+    left: 0px;
+    position: absolute;
+    top: -20px;
+}
+blockquote cite {
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+blockquote cite::before {
+    content: "\2014 \2009";
+}
+.info {
+	text-align:center;
+	padding: 20px;
+	font-family: sans-serif;
+	font-weight: 600;
+	color: #666;
+}			
+
+	    </style>
+	    <script>
+	    	var anto = {
+	    		sentences:[
+	    			'Hai momtatoooo tracker su moriss?',
+	    			'Manuel do rebbe shapers di piu',
+	    			'xgwxking',
+	    			'qlsqp<br/>spsql',
+	    			'nel web cnfgi<br/>web confgi',
+	    			'vhido a lolreznmo',
+	    			'orann da piuu errore',
+	    			'ptobsanfo',
+	    			'Importante Is That Sasha side Wars',
+	    			'La richiesta &egrave; banane',
+	    			'On Norris World ?',
+	    			'infatti sarebbe bene<br/>che nfnzionasse cosi',
+	    			'complelentare',
+	    			'acuas',
+	    			'manfietdsazione',
+	    			'ragazzi io jn reragingo il sito',
+	    			'Mettere vivida le beta in riso management a 100',
+	    			'mi dai il inj',
+	    			'Antoine ha aggiunto Antonello<br/>Antonello ha abbandonato la conversazione<br/>Antoine ha aggiunto Antonello<br/>Antoine ha abbandonato la conversazione',
+	    			'manfietdsazione',
+	    			'dici  aginafgernaoc di avvuicinare qui+',
+	    			'contrllando',
+	    			'dibentio',
+	    			'stabte',
+	    			'sprao di passare sotto miserbet<br/>m< viato che non ÃƒÆ’Ã‚Â¨ possibioe<br/>immediatamente',
+	    			'per guiocasi',
+	    			'cosa nnv<',
+	    			'giardo I lhgo',
+	    			'sei cmq sicur che vebga istazata',
+	    			'r v&egrave; dysts dolo uns richietas di valutazione<br/>da 200<br/>e non da 400 e 500<br/>oggi<br/>vhr non diva micnkiate',
+	    			'account bloccato lo indica dopo I tentative<br/>dopo che suoper I l numero di tenativi impostati sul web confgi',
+	    			'quanto c&egrave; in babca jv e teycio',
+	    			'mka nin c&egrave; sul db',
+	    			'non si legge bene',
+	    			'mi I user e pwd',
+	    			'lasciamolo stre',
+	    			'morrisi il live',
+	    			'die cieri serache nn si loggava',
+	    			'Facciamo la calle?',
+	    			'RIPROVSTE',
+	    			'oggi vorrei che si finesse',//40
+	    			'domain marina c sino',
+	    			'POI RITORNIAMO INDIETRO QUANDO SDARSAÃƒÆ’Ã‚Â SU',
+	    			'anche su asdsobet',
+	    			'url e acredxenzxiali',
+	    			'io wsapevo cxhe sravate cambiando striunge di conn essione',
+	    			'lkubnga!',
+	    			'rtimanfo',
+	    			'il prblema potrbbe eser nscomm',
+	    			'le verifico io in febug',
+	    			'che tiotrale iporto hanno giocato',//50
+	    			'rinminaimo',
+	    			'vecchie bollette<br/>no<br/>3024<br/>2014<br/>no seve',
+	    			'dr il dito &egrave; giu dobbiasmo anticvipare',
+	    			'Ciso',
+	    			'ieri che % di vilume ga fatto<br/>in numerio tichet',
+	    			'ho lvto vionitut dalla lista',
+	    			'viene chiamata unaltrasp sua<di fixggio',
+	    			'prativmanrtye',
+	    			'ragazzi sto inziando qa cdonfondermi',
+	    			'lwggo<br/>che anche gicas nn ei raggiugne<br/>si dovfebbe esre biondato certo',//60
+	    			'Ma Sri al pc?',
+	    			'live sumo rispetto',
+	    			'yuyyi wirlli che  hanno dns italiani',
+	    			'tu chiavai acion 2',
+	    			'Ragazzi vorrei capire di quantonaegnala lolloncosa possiamonfsrennellimmediato e schedulare quello che non lo &egrave; con tempi qccettabiki  modo da infornare il cliente',
+	    			'HO LEVATO IL 2015 DALLE VITE',
+	    			'Fallo. Edere a l\'olmo<br/>Lillo<br/>Lollo',
+	    			'funzionas<\'<br/>probsa sdu asopoplics as tutts la rete</br>e modifica di ujnarete di test',
+	    			'loro gann ogstyto du brtroma<br/>e noin esce',
+					'just the id team is importasnto',
+                    'di cippa d\'afica'
+				],
+				dates: {
+                    0: "12/01/2011 14:23", 1: "21/01/2011 14:47", 2: "26/01/2011 16:11", 3: "18/02/2011 17:12",
+                    4: "15/03/2011 14:15", 5: "15/03/2011 16:39", 6: "19/03/2011 15:49", 7: "05/04/2011 12:38",
+                    8: "21/04/2011 17:19", 9: "27/09/2011 14:22", 10: "16/01/2012 17:14", 11: "19/02/2012 13:27",
+                    12: "24/02/2012 16:58", 13: "27/03/2012 17:28", 14: "22/06/2012 16:14", 15: "23/07/2012 17:52",
+                    16: "08/11/2012 17:45", 17: "22/11/2012 15:18", 18: "23/11/2012 14:26", 19: "27/11/2012 15:58",
+                    20: "26/01/2013 14:37", 21: "28/02/2013 15:34", 22: "15/03/2013 16:42", 23: "25/03/2013 14:12",
+                    24: "28/03/2013 16:27", 25: "13/04/2013 17:36", 26: "25/04/2013 16:13", 27: "26/04/2013 17:21",
+                    28: "14/05/2013 17:29", 29: "26/05/2013 15:54", 30: "28/06/2013 16:07", 31: "20/12/2013 15:11",
+                    32: "10/05/2014 16:49", 33: "09/06/2014 17:51", 34: "03/07/2014 17:57", 35: "11/07/2014 18:22",
+                    36: "19/08/2014 16:41", 37: "03/09/2014 14:09", 38: "19/09/2014 15:17", 39: "04/10/2014 17:03",
+                    40: "22/01/2015 10:42", 41: "05/12/2014 16:19", 42: "10/01/2015 14:33", 43: "08/07/2015 17:55",
+                    44: "06/08/2015 18:44", 45: "10/08/2015 16:51", 46: "22/08/2015 15:23", 47: "12/09/2015 17:35",
+                    48: "12/10/2015 14:41", 49: "05/11/2015 14:56", 50: "04/12/2015 13:57", 51: "07/12/2015 13:54",
+                    52: "08/12/2015 15:48", 53: "14/01/2016 14:39", 54: "07/02/2016 15:26", 55: "19/02/2016 14:38",
+                    56: "07/05/2016 17:43", 57: "14/05/2016 16:44", 58: "16/05/2016 16:24", 59: "16/06/2016 15:52",
+                    60: "17/06/2016 14:27", 61: "23/07/2016 15:38", 62: "18/10/2016 14:18", 63: "13/07/2017 17:08",
+                    64: "09/08/2017 15:56", 65: "17/01/2017 15:15", 66: "12/08/2017 18:09", 67: "14/03/2017 10:42",
+					68: "27/03/2017 18:50", 69: "27/03/2017 18:55", 70: "26/04/2017 11:52", 71: "31/12/2025 15:51"
+				}/*
+	    		dates:{
+	    			40:'22/01/2015 10:42',
+	    			50:'04/12/2015 13:57',
+	    			65:'17/01/2017 15:15',
+	    			67:'14/03/2017 10:42',
+	    			68:'27/03/2017 18:50',
+	    			69:'27/03/2017 18:55',
+	    			70:'26/04/2017 11:52' //'just the id team is importasnto'
+	    		}*/
+	    	}
+
+			function randomDate(){
+				var $today = new Date();
+				var $dd = $today.getDate(), $mm = $today.getMonth(), $yyyy = $today.getFullYear();
+				$rand = Math.floor(Math.random()*11);
+				$dd = $rand+$dd; $mm = $rand+$mm;
+				$hh = $rand+$today.getHours(); $mmm = $rand+$mm;
+				$yyyy = $yyyy-$rand;
+				if($dd>28){$dd = 28;}; if($mm>12){$mm = 12;}
+				if($hh>24){$hh = 24;}; if($mmm>60){$mmm = 60;};
+				if($dd<10){$dd='0'+$dd}
+				if($mm<10){$mm='0'+$mm}
+				$randDate=$dd+"/"+$mm+"/"+$yyyy+' '+$hh+':'+$mmm+':'+$today.getSeconds();
+				return $randDate;
+			}
+
+			function randomNumber(debug){
+				var log = ''
+				var n = 0, arrays = []; nArrays = Math.floor((Math.random() * 10) + 1);
+				log += debug ? '- Ho creato '+nArrays+' array' : ''
+				for(var i=0; i<nArrays; i++){
+					var a = [];
+					for(var j=0; j<anto.sentences.length;j++){
+						a.push(Math.floor((Math.random() * 100000) % anto.sentences.length))
+					}
+					arrays.push(a)
+					log += debug ? '\n- Array '+i+': '+a : ''
+				}
+				var indexArray = Math.floor((Math.random() * 100000) % nArrays)
+				var indexSentences = Math.floor((Math.random() * 100000) % anto.sentences.length)
+				n = arrays[indexArray][indexSentences]
+				log += debug ? '\n\n- Scelgo l\'elemento '+indexSentences+' dell\'array '+indexArray +': '+n: ''
+				
+				console.log(log)
+				return n;
+			}
+
+			const render = rnd=>{				
+	    		$('#quote').html(anto.sentences[rnd])
+				$('#time').html(anto.dates[rnd])
+			}
+
+			const main = ()=>{
+				const random = randomNumber(true);
+				console.log('random >>>>', random)
+				render(random);
+				history.pushState({ content: random }, "", `?item=${random}`); // save history
+			}			
+
+	    	$(document).ready(function(){	    		
+	    		//
+	    		console.log('------')
+	    		var choosen = Math.floor((Math.random() * 100000) % anto.sentences.length)
+	    		console.log(choosen)
+				//Z: date tutte assegnate, nn serve piu' random
+				//Z: tramite click aggiorniamo senza ricaricare
+
+				document.documentElement.style.cursor = 'pointer';
+				
+				document.addEventListener('click', main);
+
+				document.addEventListener('keydown', e=>{
+				    if (e.key === "Enter") {
+				       main()
+				    }
+				});
+
+				
+
+				window.addEventListener('popstate', (e) => {
+					if (e.state) render(e.state.content); // get state and renderize
+				});
+
+				const params = new URLSearchParams(window.location.search);
+			    const item = params.get('item');
+			    if (item) {
+			        render(item);
+			        history.replaceState({ content: item }, "", window.location.href);
+			    }else{
+					document.dispatchEvent(new Event('click'));
+			    }
+				/*
+	    		var random = randomNumber(true);
+	    		$('#quote').html(anto.sentences[random])
+	    		//
+	    		var d = Math.floor((Math.random() * 100000 + 1) % 30)
+	    		var m = Math.floor((Math.random() * 100000 + 1) % 11)
+	    		var y = new Date().getFullYear();
+	    		$('#time').html(anto.dates[random] || randomDate())
+				*/
+				
+	    	})
+	    	    </script>
+	</head>
+
+	<body>
+	   <blockquote>
+	  		<span id="quote"></span>	
+			<cite><!--Antonello, --><span id="time"></span></cite>
+		</blockquote>
+		<div class="info">CLICK or ENTER</div>
+	</body>
+</html>
